@@ -1,0 +1,16 @@
+digraph "merge"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="merge",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Every diagonal of the partition is checked whether it can be removed."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="Next",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main2_8cpp.html#ab5f4e60f66ccfd83dee138a34a48cf89",tooltip="given a point and a polygon it returns the next point in the polygon in clockwise order"];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="notches",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main2_8cpp.html#aa9d4a63c2ae8ab4f5fd4720e37ab4719",tooltip="checks if any vertex in the given polygon is a notch"];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="isAcute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main2_8cpp.html#a56a3caaf371b1e2dfddd6fd1dcfd6aae",tooltip="Checks if the angle between two line segments is acute or not."];
+  Node3 -> Node3 [color="steelblue1",style="solid"];
+}

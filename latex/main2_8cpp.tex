@@ -1,0 +1,371 @@
+\hypertarget{main2_8cpp}{}\doxysection{C\+:/\+Users/sathvik reddy/\+Downloads/\+DAA submission/main2.cpp File Reference}
+\label{main2_8cpp}\index{C:/Users/sathvik reddy/Downloads/DAA submission/main2.cpp@{C:/Users/sathvik reddy/Downloads/DAA submission/main2.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include \char`\"{}dcel.\+hpp\char`\"{}}\newline
+Include dependency graph for main2.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main2_8cpp_a317f74c96633162ddfca8f4fdcb926ea}{side}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$A, \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$B, \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$P)
+\begin{DoxyCompactList}\small\item\em This function checks if a point is on the right side or left side or on the given line. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{main2_8cpp_a52c6ba5b8c7880a6147006d67b8e7eef}{is\+Inside}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$p, vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ polygon)
+\begin{DoxyCompactList}\small\item\em This function checks whether the given point lies inside the given polygon or not. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{main2_8cpp_a56a3caaf371b1e2dfddd6fd1dcfd6aae}{is\+Acute}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$p1, \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$p2, \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$p3)
+\begin{DoxyCompactList}\small\item\em Checks if the angle between two line segments is acute or not. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \mbox{\hyperlink{main2_8cpp_aa9d4a63c2ae8ab4f5fd4720e37ab4719}{notches}} (vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ inp)
+\begin{DoxyCompactList}\small\item\em checks if any vertex in the given polygon is a notch \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \mbox{\hyperlink{main2_8cpp_a1f07053540f7ee22fba3abcf8a147aca}{check\+Notch}} (vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ inp, vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ poly)
+\begin{DoxyCompactList}\small\item\em given an input polygon it returns a list of all the vertices which were a notch in the orignal polygon. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main2_8cpp_a6981500e9d82995fd84809a998db9f9c}{check\+Vertex\+Notch}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$p, vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ poly)
+\begin{DoxyCompactList}\small\item\em checks if the given vertex is a notch in the given polygon \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{main2_8cpp_ab5f4e60f66ccfd83dee138a34a48cf89}{Next}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$v, vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ poly)
+\begin{DoxyCompactList}\small\item\em given a point and a polygon it returns the next point in the polygon in clockwise order \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main2_8cpp_aafa857251909954b8aaee16351027ab0}{remove\+\_\+side}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$p, vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ L, \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$p1, vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \&Lf)
+\begin{DoxyCompactList}\small\item\em Removes the vertices on one side of the line segment p and p1 of the polygon Lf. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \mbox{\hyperlink{main2_8cpp_a67bc65e415b1b58b8f300827a7a61ca1}{rectangle}} (vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ p)
+\begin{DoxyCompactList}\small\item\em Gives us a rectangle that encloses the given polygon. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{main2_8cpp_a572c79dc35a19a99d82a92f2bb3b0b0e}{in\+Side\+Rectangle}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$p, vector$<$ double $>$ r)
+\begin{DoxyCompactList}\small\item\em Checks if a given point is inside the rectangle or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main2_8cpp_a0ce96b3796447f52aac4d63495f6ae77}{fun}} (\mbox{\hyperlink{class_d_c_e_l}{DCEL}} poly, vector$<$ vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ $>$ \&ans)
+\begin{DoxyCompactList}\small\item\em The algorithm for decomposition of the given polygon into convex polygons. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{main2_8cpp_adcdefda13b284dba73c32cccb8152ef0}{Prev}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$v, vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ poly)
+\begin{DoxyCompactList}\small\item\em given a point and a polygon it returns the previous point in the polygon in clockwise order \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main2_8cpp_a0dc7b63de9df88a15a0a043e339e3963}{merge}} (vector$<$ vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ $>$ \&ans, \mbox{\hyperlink{class_d_c_e_l}{DCEL}} poly)
+\begin{DoxyCompactList}\small\item\em Every diagonal of the partition is checked whether it can be removed. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main2_8cpp_a1f07053540f7ee22fba3abcf8a147aca}\label{main2_8cpp_a1f07053540f7ee22fba3abcf8a147aca}} 
+\index{main2.cpp@{main2.cpp}!checkNotch@{checkNotch}}
+\index{checkNotch@{checkNotch}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{checkNotch()}{checkNotch()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ check\+Notch (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$}]{inp,  }\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$}]{poly }\end{DoxyParamCaption})}
+
+
+
+given an input polygon it returns a list of all the vertices which were a notch in the orignal polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inp} & input polygon whose vertices are to be checked \\
+\hline
+{\em poly} & the original polygon\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of vertices 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{main2_8cpp_a6981500e9d82995fd84809a998db9f9c}\label{main2_8cpp_a6981500e9d82995fd84809a998db9f9c}} 
+\index{main2.cpp@{main2.cpp}!checkVertexNotch@{checkVertexNotch}}
+\index{checkVertexNotch@{checkVertexNotch}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{checkVertexNotch()}{checkVertexNotch()}}
+{\footnotesize\ttfamily int check\+Vertex\+Notch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{p,  }\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$}]{poly }\end{DoxyParamCaption})}
+
+
+
+checks if the given vertex is a notch in the given polygon 
+
+For the given polygon we call the \#notches2 function which returns list of all the notches in the polygon if the given vertex is part of that list we return 1 else 0
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the point to be checked \\
+\hline
+{\em poly} & the given polygon\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the given point is a notch 
+
+0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{main2_8cpp_a0ce96b3796447f52aac4d63495f6ae77}\label{main2_8cpp_a0ce96b3796447f52aac4d63495f6ae77}} 
+\index{main2.cpp@{main2.cpp}!fun@{fun}}
+\index{fun@{fun}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{fun()}{fun()}}
+{\footnotesize\ttfamily void fun (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_d_c_e_l}{DCEL}}}]{poly,  }\item[{vector$<$ vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ $>$ \&}]{ans }\end{DoxyParamCaption})}
+
+
+
+The algorithm for decomposition of the given polygon into convex polygons. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly} & The original polygon \\
+\hline
+{\em ans} & List of all the polygons after the partition process \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{main2_8cpp_a572c79dc35a19a99d82a92f2bb3b0b0e}\label{main2_8cpp_a572c79dc35a19a99d82a92f2bb3b0b0e}} 
+\index{main2.cpp@{main2.cpp}!inSideRectangle@{inSideRectangle}}
+\index{inSideRectangle@{inSideRectangle}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{inSideRectangle()}{inSideRectangle()}}
+{\footnotesize\ttfamily bool in\+Side\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{p,  }\item[{vector$<$ double $>$}]{r }\end{DoxyParamCaption})}
+
+
+
+Checks if a given point is inside the rectangle or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Given vertex \\
+\hline
+{\em r} & given rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{main2_8cpp_a56a3caaf371b1e2dfddd6fd1dcfd6aae}\label{main2_8cpp_a56a3caaf371b1e2dfddd6fd1dcfd6aae}} 
+\index{main2.cpp@{main2.cpp}!isAcute@{isAcute}}
+\index{isAcute@{isAcute}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{isAcute()}{isAcute()}}
+{\footnotesize\ttfamily bool is\+Acute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{p1,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{p2,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{p3 }\end{DoxyParamCaption})}
+
+
+
+Checks if the angle between two line segments is acute or not. 
+
+Checks if the angle at point p2 formed by the line segments p1,p2 and p2,p3 is acute or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & start co-\/ordinate of 1st line segment \\
+\hline
+{\em p2} & the point at which angle is to be checked \\
+\hline
+{\em p3} & start co-\/ordinate of 2nd line segment\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the angle is acute 
+
+false otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{main2_8cpp_a52c6ba5b8c7880a6147006d67b8e7eef}\label{main2_8cpp_a52c6ba5b8c7880a6147006d67b8e7eef}} 
+\index{main2.cpp@{main2.cpp}!isInside@{isInside}}
+\index{isInside@{isInside}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{isInside()}{isInside()}}
+{\footnotesize\ttfamily bool is\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{p,  }\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$}]{polygon }\end{DoxyParamCaption})}
+
+
+
+This function checks whether the given point lies inside the given polygon or not. 
+
+We use a for loop and for each side of the polygon we call \#side2 function and check the given point. If the point lies on the right side of all the sides then it lies inside the polygon Else it lies outside or on the polygon
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the point to be checked \\
+\hline
+{\em polygon} & the given polygon\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the point p lies inside the given polygon 
+
+false if the point p lies outside or on the given polygon 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{main2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main2.cpp@{main2.cpp}!main@{main}}
+\index{main@{main}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{main2_8cpp_a0dc7b63de9df88a15a0a043e339e3963}\label{main2_8cpp_a0dc7b63de9df88a15a0a043e339e3963}} 
+\index{main2.cpp@{main2.cpp}!merge@{merge}}
+\index{merge@{merge}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily void merge (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ $>$ \&}]{ans,  }\item[{\mbox{\hyperlink{class_d_c_e_l}{DCEL}}}]{poly }\end{DoxyParamCaption})}
+
+
+
+Every diagonal of the partition is checked whether it can be removed. 
+
+A diagonal d is said to be essential if removal of d creates a piece that is non convex. The above partition process may sometimes produce partitions that contain inessential diagonals. To prevent this after the partition process we call this merging funcion which checks everyone of the diagonal in order whether it can be removed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ans} & List of all the polygons after the partition process \\
+\hline
+{\em poly} & The original polygon \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 11
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{main2_8cpp_ab5f4e60f66ccfd83dee138a34a48cf89}\label{main2_8cpp_ab5f4e60f66ccfd83dee138a34a48cf89}} 
+\index{main2.cpp@{main2.cpp}!Next@{Next}}
+\index{Next@{Next}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{v,  }\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$}]{poly }\end{DoxyParamCaption})}
+
+
+
+given a point and a polygon it returns the next point in the polygon in clockwise order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & given point whose next point is to be found \\
+\hline
+{\em poly} & the given polygon\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The next point 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{main2_8cpp_aa9d4a63c2ae8ab4f5fd4720e37ab4719}\label{main2_8cpp_aa9d4a63c2ae8ab4f5fd4720e37ab4719}} 
+\index{main2.cpp@{main2.cpp}!notches@{notches}}
+\index{notches@{notches}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{notches()}{notches()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ notches (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$}]{inp }\end{DoxyParamCaption})}
+
+
+
+checks if any vertex in the given polygon is a notch 
+
+We traverse all the sides of the given polygon, for all two adjacent sides we call \#is\+Acute2. If it returns false then the given point is a notch so we add it to the list of notches.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inp} & the polygon to be checked\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of all the vertices which are notch 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 14
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{main2_8cpp_adcdefda13b284dba73c32cccb8152ef0}\label{main2_8cpp_adcdefda13b284dba73c32cccb8152ef0}} 
+\index{main2.cpp@{main2.cpp}!Prev@{Prev}}
+\index{Prev@{Prev}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{Prev()}{Prev()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ Prev (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{v,  }\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$}]{poly }\end{DoxyParamCaption})}
+
+
+
+given a point and a polygon it returns the previous point in the polygon in clockwise order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & given point whose previous point is to be found \\
+\hline
+{\em poly} & the given polygon\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The prev point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main2_8cpp_a67bc65e415b1b58b8f300827a7a61ca1}\label{main2_8cpp_a67bc65e415b1b58b8f300827a7a61ca1}} 
+\index{main2.cpp@{main2.cpp}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{rectangle()}{rectangle()}}
+{\footnotesize\ttfamily vector$<$ double $>$ rectangle (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$}]{p }\end{DoxyParamCaption})}
+
+
+
+Gives us a rectangle that encloses the given polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the given polygon which is to be enclosed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$double$>$ (Points of the rectangle) 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{main2_8cpp_aafa857251909954b8aaee16351027ab0}\label{main2_8cpp_aafa857251909954b8aaee16351027ab0}} 
+\index{main2.cpp@{main2.cpp}!remove\_side@{remove\_side}}
+\index{remove\_side@{remove\_side}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{remove\_side()}{remove\_side()}}
+{\footnotesize\ttfamily void remove\+\_\+side (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{p,  }\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$}]{L,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{p1,  }\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \&}]{Lf }\end{DoxyParamCaption})}
+
+
+
+Removes the vertices on one side of the line segment p and p1 of the polygon Lf. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Point1 of the segment \\
+\hline
+{\em L} & The polygon whose vertices are to be removed \\
+\hline
+{\em p1} & Point2 of the segment \\
+\hline
+{\em Lf} & The polygon whose vertices are to be removed(same polygon L) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 17
+Here is the caller graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{main2_8cpp_a317f74c96633162ddfca8f4fdcb926ea}\label{main2_8cpp_a317f74c96633162ddfca8f4fdcb926ea}} 
+\index{main2.cpp@{main2.cpp}!side@{side}}
+\index{side@{side}!main2.cpp@{main2.cpp}}
+\doxysubsubsection{\texorpdfstring{side()}{side()}}
+{\footnotesize\ttfamily int side (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{B,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{P }\end{DoxyParamCaption})}
+
+
+
+This function checks if a point is on the right side or left side or on the given line. 
+
+To determine which side the point lies we calculate its cross product value. If the cross product is +ve means it lies on the right side. If the cross product is -\/ve means it lies on the left side. And if cross product is 0 then it lies on the line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & start co-\/ordinate of the line \\
+\hline
+{\em B} & end co-\/ordinate of the line \\
+\hline
+{\em P} & the point to be checked\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns 1 if the point lies on the right side of the line 
+
+returns -\/1 if the point lies on the left side of the line 
+
+returns 0 if the point lies on the line 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 19

@@ -1,0 +1,115 @@
+\hypertarget{class_d_c_e_l}{}\doxysection{DCEL Class Reference}
+\label{class_d_c_e_l}\index{DCEL@{DCEL}}
+
+
+implementation of Doubly Connected \mbox{\hyperlink{class_edge}{Edge}} List (\mbox{\hyperlink{class_d_c_e_l}{DCEL}}) as a data structure to store the polygon decomposition  
+
+
+
+
+{\ttfamily \#include $<$dcel.\+hpp$>$}
+
+
+
+Collaboration diagram for DCEL\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_d_c_e_l_a7f96774fe581ce15f1fc11113b129dc4}{add\+Vertex}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em adds vertex to the \mbox{\hyperlink{class_d_c_e_l}{DCEL}} vertex list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_d_c_e_l_ac8c3f9bc60d475e3819bc4375567b774}{add\+Edge}} (double x1, double y1, double x2, double y2)
+\begin{DoxyCompactList}\small\item\em adds an edge to the \mbox{\hyperlink{class_d_c_e_l}{DCEL}} edge list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_d_c_e_l_a1bd2dedefffced8ab46d4aa8a72d04cf}{add\+Face}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \mbox{\hyperlink{class_d_c_e_l_aa3030dbd6ae8af11e4e38c476749750e}{v}}
+\item 
+vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ \mbox{\hyperlink{class_d_c_e_l_a53e37420bdea61593086a50a8fbdda12}{e}}
+\item 
+vector$<$ \mbox{\hyperlink{class_face}{Face}} $\ast$ $>$ \mbox{\hyperlink{class_d_c_e_l_a2c9f1f8f93ac405a40779c51dcbe44ff}{f}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+implementation of Doubly Connected \mbox{\hyperlink{class_edge}{Edge}} List (\mbox{\hyperlink{class_d_c_e_l}{DCEL}}) as a data structure to store the polygon decomposition 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_c_e_l_ac8c3f9bc60d475e3819bc4375567b774}\label{class_d_c_e_l_ac8c3f9bc60d475e3819bc4375567b774}} 
+\index{DCEL@{DCEL}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!DCEL@{DCEL}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily void DCEL\+::add\+Edge (\begin{DoxyParamCaption}\item[{double}]{x1,  }\item[{double}]{y1,  }\item[{double}]{x2,  }\item[{double}]{y2 }\end{DoxyParamCaption})}
+
+
+
+adds an edge to the \mbox{\hyperlink{class_d_c_e_l}{DCEL}} edge list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & -\/ The x coordinate of the first point \\
+\hline
+{\em y1} & -\/ The y coordinate of the first point \\
+\hline
+{\em x2} & -\/ The x coordinate of the second point \\
+\hline
+{\em y2} & -\/ The y coordinate of the second point \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_d_c_e_l_a1bd2dedefffced8ab46d4aa8a72d04cf}\label{class_d_c_e_l_a1bd2dedefffced8ab46d4aa8a72d04cf}} 
+\index{DCEL@{DCEL}!addFace@{addFace}}
+\index{addFace@{addFace}!DCEL@{DCEL}}
+\doxysubsubsection{\texorpdfstring{addFace()}{addFace()}}
+{\footnotesize\ttfamily void DCEL\+::add\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d_c_e_l_a7f96774fe581ce15f1fc11113b129dc4}\label{class_d_c_e_l_a7f96774fe581ce15f1fc11113b129dc4}} 
+\index{DCEL@{DCEL}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!DCEL@{DCEL}}
+\doxysubsubsection{\texorpdfstring{addVertex()}{addVertex()}}
+{\footnotesize\ttfamily void DCEL\+::add\+Vertex (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+adds vertex to the \mbox{\hyperlink{class_d_c_e_l}{DCEL}} vertex list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x co-\/ordinate of the vertex \\
+\hline
+{\em y} & y co-\/ordinate of the vertex \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_d_c_e_l_a53e37420bdea61593086a50a8fbdda12}\label{class_d_c_e_l_a53e37420bdea61593086a50a8fbdda12}} 
+\index{DCEL@{DCEL}!e@{e}}
+\index{e@{e}!DCEL@{DCEL}}
+\doxysubsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_edge}{Edge}} $\ast$$>$ DCEL\+::e}
+
+\mbox{\Hypertarget{class_d_c_e_l_a2c9f1f8f93ac405a40779c51dcbe44ff}\label{class_d_c_e_l_a2c9f1f8f93ac405a40779c51dcbe44ff}} 
+\index{DCEL@{DCEL}!f@{f}}
+\index{f@{f}!DCEL@{DCEL}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_face}{Face}} $\ast$$>$ DCEL\+::f}
+
+\mbox{\Hypertarget{class_d_c_e_l_aa3030dbd6ae8af11e4e38c476749750e}\label{class_d_c_e_l_aa3030dbd6ae8af11e4e38c476749750e}} 
+\index{DCEL@{DCEL}!v@{v}}
+\index{v@{v}!DCEL@{DCEL}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$$>$ DCEL\+::v}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/sathvik reddy/\+Downloads/\+DAA submission/\mbox{\hyperlink{dcel_8hpp}{dcel.\+hpp}}\end{DoxyCompactItemize}

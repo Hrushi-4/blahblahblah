@@ -1,0 +1,22 @@
+digraph "notches"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="notches",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="checks if any vertex in the given polygon is a notch"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="checkNotch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main2_8cpp.html#a1f07053540f7ee22fba3abcf8a147aca",tooltip="given an input polygon it returns a list of all the vertices which were a notch in the orignal polygo..."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="fun",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main2_8cpp.html#a0ce96b3796447f52aac4d63495f6ae77",tooltip="The algorithm for decomposition of the given polygon into convex polygons."];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main2_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="checkVertexNotch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main2_8cpp.html#a6981500e9d82995fd84809a998db9f9c",tooltip="checks if the given vertex is a notch in the given polygon"];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="merge",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main2_8cpp.html#a0dc7b63de9df88a15a0a043e339e3963",tooltip="Every diagonal of the partition is checked whether it can be removed."];
+  Node6 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node1 [dir="back",color="steelblue1",style="solid"];
+}
